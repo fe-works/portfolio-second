@@ -7,32 +7,17 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
 
-  // Debag-option
-  strict: true,
-
   state: {
-    //記事情報
-    articles: [],
-
-    //詳細情報(引き渡し)
-    details: [],
-
     //BGチョイス画面
-    img_src: null
+    img_src: require("../assets/img_top1.png")
   },
 
   getters: {
-
-    //記事の番号を探し当てる
-
   },
   mutations: {
-    //img_srcにURL代入
-    getImgSource(state) {
-      const num = Math.random() * (4 - 1) + 1;
-      console.log('debag')
-      return state.img_src = '../assets/img_top' + num + '.png'
-    },
+    updateImage(state, payload){
+      state.img_src = payload
+    }
   },
   actions: {
   },
