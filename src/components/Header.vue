@@ -42,11 +42,16 @@
 
   display: flex;
   justify-content: space-between;
-  
+  position: fixed;
+
   height: 60px;
   width:100vw;
 
-  border-bottom: solid 0.5px #EEF1F2;
+  /* https://webdesignday.jp/inspiration/technique/css/4166/#i-2
+     scroll時変化を実装したい！！！ */
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+
 }
 
 #nav {
@@ -79,7 +84,6 @@
 #logo-sns {
     width: 200px;
     margin-right: 20px;
-
 }
 
 
@@ -87,6 +91,7 @@
     margin:0px;
     padding:0px 15px;
     width:25px;
+    align-items:last baseline;
     /* padding:0px 20px 0px 20px; */
 }
 
