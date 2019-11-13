@@ -2,7 +2,13 @@
     {
         "title" :"Fe.photos",
         "subtitle":"Logo, Web, CI Design / Coding",
-        "img":"@/assets/img_art-t1.png",
+        "img":"img_art-t1.png",
         "id":"1"
+    },
+    {
+        "title" :"LAC(Event)",
+        "subtitle":"Logo Design / PV / Planning",
+        "img":"img_art-t2.png",
+        "id":"2"
     }
 ]

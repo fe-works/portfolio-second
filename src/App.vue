@@ -19,11 +19,12 @@ export default {
 <style>
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'century-gothic',a-otf-ud-shin-go-pr6n, sans-serif;
+  font-weight: normal;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #1A1A1A;
 }
 
 #nav {
@@ -31,8 +32,8 @@ export default {
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  font-family: century-gothic, sans-serif;
+  color: #1A1A1A;
   margin-left: 20px;
   margin-right: 20px;
 }

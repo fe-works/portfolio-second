@@ -22,12 +22,14 @@ export default new Vuex.Store({
     ],
   },
 
+  //stateを参照する関数はここへ
   getters: {
     topArticle(state) {
       return state.topArticle
     }
   },
 
+  //stateを更新するものはこちらへ
   mutations: {
     setImage(state, payload){
       state.img_src = payload

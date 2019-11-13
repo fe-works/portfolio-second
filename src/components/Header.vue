@@ -36,7 +36,6 @@
 
 <style scoped>
 #header {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -64,7 +63,8 @@
 }
 
 #nav a {
-  font-weight: bold;
+  font-weight: normal;
+  border: 0;
   color: #1A1A1A;
   margin-left: 10px;
   margin-right: 10px;
@@ -84,6 +84,10 @@
 #logo-sns {
     width: 200px;
     margin-right: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
@@ -91,8 +95,6 @@
     margin:0px;
     padding:0px 15px;
     width:25px;
-    align-items:last baseline;
-    /* padding:0px 20px 0px 20px; */
 }
 
 #nav a.router-link-exact-active {

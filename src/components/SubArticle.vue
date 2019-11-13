@@ -1,11 +1,11 @@
 <template>
-    <div id="TopArticle" v-on:click="onclick">
+    <div id="SubArticle" v-on:click="onclick">
         <!-- 画像要素指定できるように -->
-        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/' + article.img) + ')'}">
+        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/sub_article/' + subarticle.img) + ')'}">
         </div>
         <div class="text">
-        <h2>{{ article.title }}</h2>
-        <h3>{{ article.subtitle }}</h3>
+        <h2>{{ subarticle.title }}</h2>
+        <h3>{{ subarticle.subtitle }}</h3>
         </div>
     </div>
 </template>
@@ -15,9 +15,9 @@
 //import { UPDATE_CURRENT } from '@/mutation-types'
 
 export default {
-    name:'top-article',
+    name:'sub-article',
     props: {
-        article: { type:Object }
+        subarticle: { type:Object }
     },
 
     methods: {
@@ -34,16 +34,15 @@ export default {
 </script>
 
 <style scoped>
-#TopArticle{
+#SubArticle{
     background-color: #FFFFFF;
-    width:750px;
-    margin:0;
-    margin-top:25px;
+    width:350px;
+    margin:20px 0;
     padding:0;
 }
-#TopArticle .capture{
-    width:750px;
-    height:270px;
+#SubArticle .capture{
+    width:350px;
+    height:200px;
     margin:0;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,18 +54,18 @@ export default {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
-#TopArticle .text h2{
+#SubArticle .text h2{
     margin:0;
-    font-size:24pt;
+    font-size:16pt;
     font-weight: normal;
 }
 
-#TopArticle .text h3{
+#SubArticle .text h3{
     margin:0;
-    font-size:12pt;
+    font-size:8pt;
     font-weight: normal;
 }
 </style>
