@@ -1,6 +1,7 @@
 <template>
-    <div id="SubArticle" v-on:click="onclick">
-        <!-- 画像要素指定できるように -->
+    <div id="SubArticle"><!-- v-on:click="onclick" -->
+
+        <!-- 画像要素指定できるように/詳細記事を表示する -->
         <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/sub_article/' + subarticle.img) + ')'}">
         </div>
         <div class="text">
@@ -20,15 +21,15 @@ export default {
         subarticle: { type:Object }
     },
 
-    methods: {
-        //...mapActions([UPDATE_CURRENT]),
+    /*methods: {
+        ...mapActions([UPDATE_CURRENT]),
 
         onclick() {
-            //look-book
-           // this[UPDATE_CURRENT](this.article)
+            // look-book
+            this[UPDATE_CURRENT](this.article)
             this.$router.push('/detail')
         }
-    }
+    }*/
 
 }
 </script>

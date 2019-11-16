@@ -1,10 +1,11 @@
 <template>
   <div class="home">
     <div id="welcome">
+
       <!-- ここを自動生成できるようにする -->
         <div class="bg-top" v-bind:style="{'background-image': 'url(' + img_src + ')'}" ></div>
         
-        <!-- scrollアイコン！！ -->
+        <!-- scrollアイコン -->
         <img class="scroll-icon" src="@/assets/scroll.svg">
 
     </div>
@@ -48,7 +49,6 @@ export default {
   },
 
    //これを今度Stateで実装する
-   //
    mounted(){
       this.topArticle = require('@/assets/top-article.json')
       this.subArticle = require('@/assets/sub-article.json')
@@ -57,7 +57,7 @@ export default {
   computed: {
 
     img_src: {
-      //なぜか動作しないのでデバッグ
+      //もう少し賢くする
        get() {
           //let num = Math.random() * (4 - 1) + 1
           //this.$store.commit('updateImage',require('../assets/img_top' + num + '.png'))
@@ -96,11 +96,6 @@ export default {
   margin:0;
 }
 
-/* 書き直し */
-#grid{
-
-}
-
 #top, #sub{
 display:flex;
 justify-content: space-around;
@@ -137,7 +132,7 @@ flex-wrap: wrap;
   }
 }
 
-/* smartphone */
+/* smartphone(Not-created) */
 @media screen and (max-width:750px) {
   
 }

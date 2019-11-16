@@ -31,7 +31,7 @@
 </template>
 
 <script>
-
+  
 </script>
 
 <style scoped>
@@ -94,7 +94,7 @@
 #logo-sns img{
     margin:0px;
     padding:0px 15px;
-    width:25px;
+    width:20px;
 }
 
 #nav a.router-link-exact-active {

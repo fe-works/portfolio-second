@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-//入門本の書式
 export default new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -32,9 +31,21 @@ export default new VueRouter({
       name: 'contact',
       component: () => import('../views/Contact.vue')
     },
+
+    /*Detail(Not-created)
+    {
+      path:'/works/:id',
+      name:'works-detail',
+      component: () => import('../views/WorksDetail.vue')
+    },*/
     {
       path: '*',
       redirect: '/'
     }
-  ]
+  ],
+
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
+
 })

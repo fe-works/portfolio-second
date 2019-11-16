@@ -73,7 +73,7 @@
 #profile #head-icon {
   grid-row:1;
   grid-column:3;
-  margin-top:3px;
+  margin-top:5px;
 }
 
 #name {
@@ -119,7 +119,7 @@
 #head-icons {
   grid-row:3;
   grid-column:3;
-  margin-top:3px;
+  margin-top:5px;
 }
 
 
