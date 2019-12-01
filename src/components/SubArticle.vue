@@ -2,7 +2,7 @@
     <div id="SubArticle"><!-- v-on:click="onclick" -->
 
         <!-- 画像要素指定できるように/詳細記事を表示する -->
-        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/sub_article/' + subarticle.img) + ')'}">
+        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/' + subarticle.img) + ')'}">
         </div>
         <div class="text">
         <h2>{{ subarticle.title }}</h2>
@@ -41,6 +41,7 @@ export default {
     margin:20px 0;
     padding:0;
 }
+
 #SubArticle .capture{
     width:350px;
     height:200px;
@@ -49,6 +50,7 @@ export default {
     background-position: center;
     background-size:contain;
 }
+
 .text{
     width: 100%;
     display: flex;
@@ -68,6 +70,35 @@ export default {
     margin:0;
     font-size:8pt;
     font-weight: normal;
+}
+
+@media screen and (max-width:750px) {
+    #TopArticle{
+        background-color: #FFFFFF;
+        width:450px;
+        height:200px;
+        margin:0;
+        margin-top:50px;
+        padding:0;
+    }
+
+    #TopArticle .capture{
+        width:450px;
+        height:160px;
+        margin:0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+    }
+
+    @media screen and (max-width:750px) {
+        .capture {
+            width:90%;
+            height: auto;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+    }
 }
 </style>
 

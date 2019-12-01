@@ -2,9 +2,8 @@
     <!-- Header -->
     <div id="header">
     <div id="global-nav">
-
-      <!-- link -->
-      <div id="nav">
+    
+     <div id="nav">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/works">Works</router-link>
@@ -13,23 +12,22 @@
 
       <!-- Logos for fe.photos -->
       <div id="logo-header">
-          <div key="black_logo">
-            <img src="@/assets//header_logo/logo_black.svg" alt="logo">
-          </div>
+            <img src="@/assets/header_logo/logo_white.svg" alt="logo">
       </div>
 
       <div id="logo-sns">
-        <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg"></a>
-        <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg"></a>
+        <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/white_tw.svg"></a>
+        <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/white_insta.svg"></a>
       </div>
     </div>
     </div>
 </template>
 
 <script>
-
 export default {
-  name:'header'
+
+name:'header'
+
 }
 </script>
 
@@ -37,17 +35,14 @@ export default {
 #global-nav {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  
   display: flex;
   justify-content: space-between;
   position: fixed;
 
   height: 60px;
   width:100vw;
-
-  background-color: #ffffff;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
-
+  background-color:none;
 }
 
 #nav {
@@ -62,7 +57,7 @@ export default {
 #nav a {
   font-weight: normal;
   border: 0;
-  color: #1A1A1A;
+  color: #FFFFFF;
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;

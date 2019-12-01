@@ -1,3 +1,4 @@
+// ヘッダー分離用,分離時は値を渡して一定以上で明るくなるヘッダーと別ける
 <template>
     <!-- Header -->
     <div id="header">
@@ -13,8 +14,8 @@
 
       <!-- Logos for fe.photos -->
       <div id="logo-header">
-          <div key="black_logo">
-            <img src="@/assets//header_logo/logo_black.svg" alt="logo">
+          <div key="sp_logo">
+            <img src="@/assets//header_logo/logo_sp.svg">
           </div>
       </div>
 
@@ -27,9 +28,48 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import store from '@/store'
 
 export default {
-  name:'header'
+  name:'header',
+
+  //img_srcを生成させるようにする
+
+  computed: {
+   ...mapGetters(['scrollHeader']),
+  },
+  
+  //https://qiita.com/yuukive/items/ede7c087843d2f7ef979
+
+  methods: {
+    handleResize: function() {
+      console.log(this.$route.path)
+        if(window.innerWidth <= 750){
+
+          //ここの書き方がわからない
+          store.dispatch('smartphoneHeader')
+          
+        } /*else if(){
+
+        }*/else {
+          store.dispatch('reverseHeader')
+        }
+      }
+  },
+
+  
+
+  mounted(){
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+
+  beforeDestroy(){
+    window.removeEventListener('resize',this.handleResize)
+  }
+  
+  //ここまで参考
 }
 </script>
 
@@ -45,6 +85,8 @@ export default {
   height: 60px;
   width:100vw;
 
+  /* https://webdesignday.jp/inspiration/technique/css/4166/#i-2
+     scroll時変化を実装したい！！！ */
   background-color: #ffffff;
   filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
 
@@ -57,6 +99,7 @@ export default {
     margin-left:20px;
     margin-bottom: auto;
     width: 200px;
+    text-decoration: none;
 }
 
 #nav a {
@@ -65,7 +108,6 @@ export default {
   color: #1A1A1A;
   margin-left: 10px;
   margin-right: 10px;
-  text-decoration: none;
 }
 
 #logo-header, #logo-sns {
@@ -97,5 +139,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+@media screen and (max-width:800px) {
+
 }
 </style>

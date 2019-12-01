@@ -1,7 +1,12 @@
 <template>
 <div id="works">
   <div id="fix"></div>
-      <div id="top">
+      <div v-if="scrollHeader === 'smart'" id="top">
+          <SubArticle v-for="(a,i) of spArticle"
+          v-bind:subarticle = "a" v-bind:key="i.id"></SubArticle>
+      </div>
+
+      <div v-else id="top">
       <TopArticle v-for="(a,i) of topArticle"
       v-bind:article = "a" v-bind:key="i.id"></TopArticle>
       </div>
@@ -10,7 +15,6 @@
       <SubArticle v-for="(b,j) of subArticle"
       v-bind:subarticle = "b" v-bind:key="j.id"></SubArticle>
       </div>
-
     </div>
 </template>
 
@@ -18,27 +22,19 @@
 // @ is an alias to /src
 import TopArticle from '@/components/TopArticle.vue'
 import SubArticle from '@/components/SubArticle.vue'
-//import axios from 'axios';
+import { mapGetters } from 'vuex'
 
 export default {
-  name: 'home',
-
-  data() {
-    return {
-      topArticle: [],
-      subArticle: []
-    }
-  },
+  name: 'works',
 
   components: {
     TopArticle,
     SubArticle
   },
 
-   mounted(){
-      this.topArticle = require('@/assets/top-article.json')
-      this.subArticle = require('@/assets/sub-article.json')
-    }
+  //img_srcを生成させるようにする
+  computed:mapGetters([ 'img_src', 'topArticle','subArticle','scrollHeader','spArticle']),
+  
 }
 
 </script>
@@ -85,6 +81,15 @@ flex-wrap: wrap;
     height: auto;
     margin: 0 auto;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #top, #sub {
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-around;
   }
 }
 

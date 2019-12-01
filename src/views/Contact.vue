@@ -20,7 +20,7 @@
 }
 
 #form {
-  margin-top:100px;
+  margin-top:50px;
   margin-bottom:20px;
   
   display:grid;
@@ -28,7 +28,7 @@
   grid-template-rows: 40px 80px 800px;
 
   /* 列 */
-  grid-template-columns: 100px 10px auto;
+  grid-template-columns: 50px 10px auto;
 }
 
 #head-icon {

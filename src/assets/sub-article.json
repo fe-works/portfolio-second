@@ -2,73 +2,73 @@
     {
         "title" :"Old Train",
         "subtitle":"Photography",
-        "img":"img_art-s1.png",
+        "img":"sub_article/img_art-s1.png",
         "id":"3"
     },
     {
         "title" :"Code For kosen",
         "subtitle":"Logo Design/ Project planning",
-        "img":"img_art-s2.png",
+        "img":"sub_article/img_art-s2.png",
         "id":"4"
     },
     {
         "title" :"Couple",
         "subtitle":"Photography",
-        "img":"img_art-s3.png",
+        "img":"sub_article/img_art-s3.png",
         "id":"5"
     },
     {
         "title" :"Enoshima",
         "subtitle":"Photography",
-        "img":"img_art-s4.png",
+        "img":"sub_article/img_art-s4.png",
         "id":"6"
     },
     {
         "title" :"Tokyo",
         "subtitle":"Photography",
-        "img":"img_art-s5.png",
+        "img":"sub_article/img_art-s5.png",
         "id":"7"
     },
     {
         "title" :"Mt.Fuji",
         "subtitle":"Photography",
-        "img":"img_art-s6.png",
+        "img":"sub_article/img_art-s6.png",
         "id":"8"
     },
     {
         "title" :"Mt.Fuji-2",
         "subtitle":"Photography",
-        "img":"img_art-s7.png",
+        "img":"sub_article/img_art-s7.png",
         "id":"9"
     },
     {
         "title" :"Minobu",
         "subtitle":"Photography",
-        "img":"img_art-s8.png",
+        "img":"sub_article/img_art-s8.png",
         "id":"10"
     },
     {
         "title" :"Kurage",
         "subtitle":"Photography",
-        "img":"img_art-s9.png",
+        "img":"sub_article/img_art-s9.png",
         "id":"11"
     },
     {
         "title" :"Tadami.L",
         "subtitle":"Photography",
-        "img":"img_art-s10.png",
+        "img":"sub_article/img_art-s10.png",
         "id":"12"
     },
     {
         "title" :"Sakura",
         "subtitle":"Photography",
-        "img":"img_art-s11.png",
+        "img":"sub_article/img_art-s11.png",
         "id":"13"
     },
     {
         "title" :"Hanabira",
         "subtitle":"Photography",
-        "img":"img_art-s12.png",
+        "img":"sub_article/img_art-s12.png",
         "id":"14"
     }
 ]

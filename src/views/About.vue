@@ -11,14 +11,14 @@
         <h2>Student, Photograph, Design, etc.</h2>
       <!-- SNS-acsess -->
         <div id="logo-sns">
-          <a class="twitter" href="https://twitter.com/_fechan/"><img src="@/assets/logo_tw.svg"></a>
-          <a class="insta" href="https://instagram.com/_fechan/"><img src="@/assets/logo_insta.svg"></a>
+          <a class="twitter" href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg"></a>
+          <a class="insta" href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg"></a>
         </div>
       </div>
 
       <p id="intro">フォトグラファー、学生。千葉県生まれ。<br>
       学業では情報工学を専攻している。主は学業のほか、UI/Webデザインを独学で学ぶ。情報セキュリティ分野にも興味を持つ。<br>
-      16歳で「CompTIA Security+」を取得。これを皮切りに、現在は応用情報技術者(FE)などの取得を目指す。<br>
+      16歳で「CompTIA Security+」を取得。これを皮切りに、現在は応用情報技術者(AP)などの取得を目指す。<br>
       その一方で、写真撮影を趣味で行う。街ブラが好き。よく散策に没頭していることも。<br>
       そのほかにも、趣味としてデザインや動画制作、DJなど多岐にわたり取り組んでいる。</p>
     
@@ -56,8 +56,10 @@
 #profile {
   margin:50px 0;
   display:grid;
-  grid-template-rows:100px 250px 40px 200px;
-  grid-template-columns:100px 185px 20px auto;
+  grid-template-rows:100px auto 40px 200px;
+  grid-template-columns:50px 150px 20px auto;
+  margin-right:20px;
+
 
 }
 
