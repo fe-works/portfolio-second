@@ -1,41 +1,86 @@
 <template>
   <div id="article">
+      <div id="fix"></div>
 
-    <!-- V-forを使った無限生成に(配列から取り出す) -->
-    <div id="img_1" class="img" v-bind:style = "{'background-image': 'url('+ require('@/assets/sub_article/' + detail.img) + ')'}" >
-    </div>
+      <!-- Background-image (img_id-1 or id-2)-->
+      <section id="picture">
+        <div class="capture capture-1" />
+        <div class="capture capture-2" />
+      </section>
 
-    <div v-if="detail.sub_img"
-           id="img_2" class="img" v-bind:style =  "{'background-image': 'url('+ require('@/assets/sub_article/' + detail.sub_img) + ')'}" >
-    </div>
+      <section id="description">
+        <div id="title">
+        <span>No:{{ id }}</span>
+        <h1>{{ description.title }}</h1>
+        <h3>{{ description.subtitle }}</h3>
+        <p>{{ description.text }}</p>
+        </div>
 
-    <!-- 名前 -->
-    <h1>{{ detail.title }}</h1>
+        <div id="info-title_1">
+        <h2 v-if="description.type === 'photo'">Date</h2>
+        <h2 v-else>Client</h2>    
+        </div>
 
-    <!-- 作業したこと -->
-    <h3>{{ detail.works }}</h3>
+        <h3>{{ description.text2 }}</h3>
 
-    <!-- コメント -->
-    <p> {{ detail.other}}</p>
+        <div id="info-title_2">
+        <h2 v-if="description.type === 'photo'">Camera/lens</h2>
+        <h2 v-else>Concept</h2>    
+        </div>
 
-    <h2>Client</h2>
-    <p>{{ detail.client }}</p>
+        <h3>{{ description.text3 }}</h3>
 
-    <h2>Concept</h2>
-    <p>{{ detail.consept }}</p>
+      </section>
 
   </div>
 </template>
 
 <script>
-//import
+import { mapGetters } from 'vuex'
 
 export default {
-    name: 'works-detail'
+    name: 'works-detail',
+    props: {
+        id: String,
+    },
+    data(){
+      return{
+        description:{}
+      }
+    },
+
+    computed:mapGetters(['getDescription']),
+
+    mounted() {
+      let d = this.getDescription(this.id)
+
+      //ok
+      console.log(d)
+
+      this.description.title = d.title
+      this.description.id = d.id
+      this.description.subtitle = d.subtitle
+      this.description.text = d.text
+      this.description.text2 = d.text2
+      this.description.text3 = d.text3
+      this.description.type = d.type
+
+      //ok
+      console.log(this.description)
+
+      if(!d){
+        this.$router.push('/')
+      }
+    }
 }
 </script>
 
 <style scoped>
 /* おそらくグリッド？ */
+#fix{
+  content:none;
+  width:100vw;
+  height:60px;
+}
 
 </style>

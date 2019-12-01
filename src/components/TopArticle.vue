@@ -1,7 +1,7 @@
 <template>
     <div id="TopArticle" v-on:click="onclick">
         <!-- 画像要素指定できるように -->
-        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/' + article.img) + ')'}">
+        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/top_article/' + article.img) + ')'}">
         </div>
         <div class="text">
         <h2>{{ article.title }}</h2>
@@ -21,12 +21,9 @@ export default {
     },
 
     methods: {
-        //...mapActions([UPDATE_CURRENT]),
-
+        // 本当はタイトルとかもpropsで渡したい
         onclick() {
-            //look-book
-           // this[UPDATE_CURRENT](this.article)
-            this.$router.push('/detail')
+            this.$router.push('/works/' + this.article.id )
         }
     }
 

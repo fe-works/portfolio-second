@@ -32,12 +32,12 @@ export default new VueRouter({
       component: () => import('../views/Contact.vue')
     },
 
-    /*Detail(Not-created)
     {
       path:'/works/:id',
       name:'works-detail',
-      component: () => import('../views/WorksDetail.vue')
-    },*/
+      component: () => import('../views/WorksDetail.vue'),
+      props:true
+    },
     {
       path: '*',
       redirect: '/'

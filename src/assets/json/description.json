@@ -1,0 +1,21 @@
+[
+
+    {
+        "id":"1",
+        "type":"other",
+        "title" :"Fe.photos",
+        "subtitle":"Logo, Web, CI Design / Coding",
+        "text":"自らのポートフォリオサイト、並びにロゴなどを始めとする「身の回り」をデザイン。\\nロゴは太陽をモチーフとし、全体的にシンプルな構成とした。",
+        "text2":"fe-chan(myself)",
+        "text3":"More simpleness, More Beautiful."
+    },
+    {
+        "id":"2",
+        "type":"other",
+        "title" :"LAC(Event)",
+        "subtitle":"Logo Design / PV / Planning",
+        "text":"学内で実施したカンファレンスイベントの企画、運営を担当。\\nロゴデザインから運営まで、一貫して携わる。",
+        "text2":"fe-chan(myself)",
+        "text3":"Let’s grow, Drop seeds."
+    }
+]

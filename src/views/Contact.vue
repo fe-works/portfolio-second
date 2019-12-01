@@ -3,14 +3,33 @@
     <div id="fix"></div>
       
       <div id="form">
-      <img id="head-icon" src="@/assets/Line-1.svg">
-      <h1 id="title">contact</h1>
-      <p id="intro">お問い合わせは、下記フォームよりお願いします。<br/>
-        (お急ぎの場合は、TwitterのDMをご利用下さい。必ず返信のお約束をするものではありません。)
-      </p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDY_1o6GND20HBPzJgtzGkaZG0AsBHTvkqT4zlzttXr5JeFA/viewform?embedded=true" width="680" height="900" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>      </div>
+        <img id="head-icon" src="@/assets/Line-1.svg">
+        <h1 id="title">contact</h1>
+        <p id="intro">お問い合わせは、下記フォームよりお願いします。<br/>
+          (お急ぎの場合は、TwitterのDMをご利用下さい。必ず返信のお約束をするものではありません。)
+        </p>
+
+        <div v-if=" scrollHeader === 'smart'" id="googleform">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDY_1o6GND20HBPzJgtzGkaZG0AsBHTvkqT4zlzttXr5JeFA/viewform?embedded=true" width="360" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>      
+        </div>
+
+        <div v-else id="googleform">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDY_1o6GND20HBPzJgtzGkaZG0AsBHTvkqT4zlzttXr5JeFA/viewform?embedded=true" width="680" height="900" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+      </div>
   </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+
+export default {
+  name:'contact',
+
+  computed:mapGetters(['scrollHeader'])
+
+}
+</script>
 
 <style scoped>
 #fix {
@@ -49,9 +68,28 @@
   margin:auto 0;
 }
 
-#form iframe{
+#form #googleform{
   grid-row:3;
   grid-column:3;
   margin-left: -40px;
+}
+
+@media screen and (max-width:800px) {
+  #form {
+    /* 行 */
+  grid-template-rows: 40px 150px 1000px;
+
+  /* 列 */
+  grid-template-columns: 30px 10px 360px;
+
+  margin-left:auto;
+  margin-right:auto;
+  }
+
+  #form #googleform{
+  grid-row:3;
+  grid-column:3;
+  margin-left:-20px;
+}
 }
 </style>

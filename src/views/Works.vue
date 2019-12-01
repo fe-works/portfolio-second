@@ -84,7 +84,7 @@ flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:750px) {
   #top, #sub {
     width:100%;
     height: auto;

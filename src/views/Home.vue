@@ -54,22 +54,32 @@ export default {
   /* Height */
   methods:{
     handleScroll() {
-      if(window.innerHeight < window.scrollY){
+      if(window.innerHeight < window.scrollY && window.innerWidth >= 750){
         store.dispatch('reverseHeader')
-      } else {
+      } else if(window.innerWidth >= 750){
         store.dispatch('clearlyHeader')
+      } else {
+        store.dispatch('smartphoneHeader')
       }
     }
   },
 
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    store.dispatch('clearlyHeader')
+    if(window.innerWidth >= 750){
+      store.dispatch('crearlyHeader')
+    } else {
+      store.dispatch('smartphoneHeader')
+    }
   },
 
   beforeDestroy() {
     window.removeEventListener('scroll',this.handleScroll)
-    store.dispatch('reverseHeader')
+    if(window.innerWidth >= 750){
+      store.dispatch('reverseHeader')
+    } else {
+      store.dispatch('smartphoneHeader')
+    }
   }
   
 }
@@ -138,8 +148,8 @@ flex-wrap: wrap;
   }
 }
 
-/* smartphone(Not-created) */
-@media screen and (max-width:800px) {
+
+@media screen and (max-width:750px) {
   #top, #sub {
     width:100%;
     height: auto;

@@ -26,7 +26,7 @@
 <script>
 export default {
 
-name:'header'
+name:'clear-header'
 
 }
 </script>

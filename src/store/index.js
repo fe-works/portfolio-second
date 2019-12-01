@@ -9,12 +9,13 @@ export default new Vuex.Store({
   state: {
     //img_srcを乱数にする
     img_src: require('@/assets/pic_background/img_1.png'),
-    topArticle: require('@/assets/top-article.json'),
-    subArticle: require('@/assets/sub-article.json'),
-    spArticle: require('@/assets/sp-article.json'),
+    topArticle: require('@/assets/json/top-article.json'),
+    subArticle: require('@/assets/json/sub-article.json'),
+    spArticle: require('@/assets/json/sp-article.json'),
+    descriptionArticle: require('@/assets/json/description.json'),
 
-    scrollHeader:'clear'
-
+    scrollHeader:'clear',
+    headerMenuCheck:'none'
   },
 
   //stateを参照する関数はここへ
@@ -40,7 +41,19 @@ export default new Vuex.Store({
 
     img_src(state) {
       return state.img_src
-    }
+    },
+
+    headerMenuCheck(state) {
+      return state.headerMenuCheck
+    },
+
+    //ページ詳細情報を入手
+    getDescription(state) {
+      return id => {
+        return state.descriptionArticle.find(description => description.id === id)
+      }
+    },
+
   },
 
   //stateを更新するものはこちらへ
@@ -50,6 +63,10 @@ export default new Vuex.Store({
     updateHeader (state,payload){
       state.scrollHeader = payload
     },
+
+    updateHeaderMenu (state, payload) {
+      state.headerMenuCheck = payload
+    }
 
     /*setImage(state) {
       let pic = 4
@@ -81,6 +98,14 @@ export default new Vuex.Store({
 
   clearlyHeader(context) {
     context.commit('updateHeader','clear')
+  },
+
+  closeHeader(context) {
+    context.commit('updateHeaderMenu','close')
+  },
+
+  openHeader(context) {
+    context.commit('updateHeaderMenu','open')
   }
 }
 

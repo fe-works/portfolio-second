@@ -50,17 +50,17 @@
   height:60px;
   content:none;
 }
+
 #about {
   font-family: 'century-gothic',a-otf-ud-shin-go-pr6n, sans-serif;
 }
+
 #profile {
   margin:50px 0;
   display:grid;
   grid-template-rows:100px auto 40px 200px;
   grid-template-columns:50px 150px 20px auto;
   margin-right:20px;
-
-
 }
 
 #my-icon {
@@ -144,12 +144,58 @@
 }
 
 
-/* #skills{
-  margin:50px 20px;
-  display:grid;
-  grid-template-rows:100px 250px;
-  grid-template-columns: 185px 20px auto;
-} */
+@media screen and (max-width:750px) {
 
+  #profile {
+    margin:50px 0;
+    display:grid;
+    grid-template-rows:150px auto 40px 200px;
+    grid-template-columns:30px 100px 10px auto;
+    margin-right:20px;
+  }
+
+  #my-icon img{
+    width:100px;
+    height:auto;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  #my-icon{
+    width:110px;
+    margin-left:-10px;
+    margin-top:-12px;
+  }
+
+  #name h1 {
+  font-size:26pt;
+  margin-top:-1px;
+  margin-left:5px;
+}
+
+  #name h2 {
+    font-size:14pt;
+  }
+
+  #logo-sns {
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+
+  #logo-sns img{
+    height:25px;
+    width:auto;
+    margin-right:5px;
+  }
+
+  #intro p{
+    font-size:13pt;
+    margin-left:-20px;
+  }
+  #table-name {
+    grid-column:1/3;
+    margin-right:6px;
+  }
+}
 </style>
 
