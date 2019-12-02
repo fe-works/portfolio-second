@@ -1,14 +1,15 @@
 <template>
   <div id="article">
-      <div id="fix"></div>
+      <div id="fix" />
 
       <!-- Background-image (img_id-1 or id-2)-->
+      <div id="grid">
       <section id="picture">
-        <div class="capture capture-1" />
-        <div class="capture capture-2" />
+        <img class="capture capture-1" v-bind:src="require('@/assets/detail_article/img_' + description.id + '-1.png')" />
+        <img v-if="description.type !== 'photo'" class="capture capture-2" v-bind:src="require('@/assets/detail_article/img_' + description.id + '-2.png')"/>
       </section>
 
-      <section id="description">
+      <section id="text">
         <div id="title">
         <span>No:{{ id }}</span>
         <h1>{{ description.title }}</h1>
@@ -19,19 +20,17 @@
         <div id="info-title_1">
         <h2 v-if="description.type === 'photo'">Date</h2>
         <h2 v-else>Client</h2>    
-        </div>
-
         <h3>{{ description.text2 }}</h3>
+        </div>
 
         <div id="info-title_2">
         <h2 v-if="description.type === 'photo'">Camera/lens</h2>
-        <h2 v-else>Concept</h2>    
+        <h2 v-else>Concept</h2>
+        <h3>{{ description.text3 }}</h3>
         </div>
 
-        <h3>{{ description.text3 }}</h3>
-
       </section>
-
+    </div>
   </div>
 </template>
 
@@ -43,6 +42,7 @@ export default {
     props: {
         id: String,
     },
+    
     data(){
       return{
         description:{}
@@ -54,23 +54,12 @@ export default {
     mounted() {
       let d = this.getDescription(this.id)
 
-      //ok
-      console.log(d)
-
-      this.description.title = d.title
-      this.description.id = d.id
-      this.description.subtitle = d.subtitle
-      this.description.text = d.text
-      this.description.text2 = d.text2
-      this.description.text3 = d.text3
-      this.description.type = d.type
-
-      //ok
-      console.log(this.description)
-
-      if(!d){
+      //なかったら
+      if(d === undefined){
         this.$router.push('/')
       }
+
+      this.description = Object.assign(d)
     }
 }
 </script>
@@ -81,6 +70,121 @@ export default {
   content:none;
   width:100vw;
   height:60px;
+}
+
+#grid{
+  /*display:grid;
+  grid-template-columns:auto,70vw,30vw,auto;
+  grid-template-rows:auto;*/
+
+  display:flex;
+  justify-content:center;
+  margin: 0 auto;
+  margin-top:30px;
+}
+
+#picture{
+  /* grid-column: 2;
+  grid-row: 1; */
+  width:70vw;
+  max-width:1000px;
+  margin:0;
+  align-items: flex-end;
+}
+
+#text{
+  /* grid-column: 4;
+  grid-row:1; */
+  margin-right:20px;
+  max-width:430px;
+  top:0;
+  align-items: flex-start;
+  margin-left:40px;
+  
+  /* 検討課題
+  align-self: flex-start;
+  position: sticky;*/
+}
+
+#picture img{
+    width:68vw;
+    max-width:1000px;
+    height:auto;
+    margin:0,auto;
+    margin-bottom:20px;
+    margin-left:10px;
+}
+
+#grid p,h1,h2,h3{
+    margin:0;
+    padding:0;
+}
+#grid h1{
+  font-size:30px;
+  margin:0;
+}
+
+#title span{
+  font-size:13px;
+  font-weight:normal;
+  margin:0;
+}
+
+#title h3{
+  font-size:14px;
+  font-weight:normal;
+  margin-top:5px;
+}
+
+#title p{
+  font-size:14px;
+  margin:10px 0;
+}
+
+#info-title_1 h2,#info-title_1 h3,
+#info-title_2 h2,#info-title_2 h3{
+  font-weight: normal;
+  margin:3px 0;
+}
+
+#info-title_1 h2, #info-title_2 h2{
+  font-size: 20px;
+}
+
+#info-title_1 h3,#info-title_2 h3{
+  font-size: 14px;
+}
+
+#info-title_1{
+  margin: 20px 0;
+}
+
+@media screen and (max-width:750px) {
+  #grid {
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction:column;
+    justify-content:center;
+
+  }
+
+  #picture img{
+    width:90vw;
+    height:auto;
+    margin:0;
+    margin-bottom:10px;
+    align-items:center;
+
+  }
+
+  #picture {
+    margin:0 auto;
+    width:auto;
+    height:auto;
+    align-items:center;
+  }
+
 }
 
 </style>

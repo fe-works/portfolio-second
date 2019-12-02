@@ -5,7 +5,7 @@
         "type":"other",
         "title" :"Fe.photos",
         "subtitle":"Logo, Web, CI Design / Coding",
-        "text":"自らのポートフォリオサイト、並びにロゴなどを始めとする「身の回り」をデザイン。\\nロゴは太陽をモチーフとし、全体的にシンプルな構成とした。",
+        "text":"自らのポートフォリオサイト、並びにロゴなどを始めとする「身の回り」をデザイン。ロゴは太陽をモチーフとし、全体的にシンプルな構成とした。",
         "text2":"fe-chan(myself)",
         "text3":"More simpleness, More Beautiful."
     },
@@ -14,8 +14,116 @@
         "type":"other",
         "title" :"LAC(Event)",
         "subtitle":"Logo Design / PV / Planning",
-        "text":"学内で実施したカンファレンスイベントの企画、運営を担当。\\nロゴデザインから運営まで、一貫して携わる。",
+        "text":"学内で実施したカンファレンスイベントの企画、運営を担当。ロゴデザインから運営まで、一貫して携わる。",
         "text2":"fe-chan(myself)",
         "text3":"Let’s grow, Drop seeds."
+    },
+    {
+        "id":"3",
+        "type":"photo",
+        "title" :"Road",
+        "subtitle":"Photography",
+        "text":"霧が残る早朝の時間帯に撮影。幻想的な風景になっている。",
+        "text2":"2019.03.31",
+        "text3":"Canon EOS_70D/EF70-300mm f/4-5.6 IS II STM"
+    },
+    {
+        "id":"4",
+        "type":"photo",
+        "title" :"Code for Kosen",
+        "subtitle":"Logo Design / Project planning",
+        "text":"学内でのプロジェクト向けに作成。CodeのCとKosenのKを掛け合わせて、Kをシンボルマークとして作成。 Kの接合部を目立たせ、プログラミングで多用される'{'を表現。",
+        "text2":"(none)",
+        "text3":"(none)"
+    },
+    {
+        "id":"5",
+        "type":"photo",
+        "title" :"Fungi",
+        "subtitle":"Photography",
+        "text":"天城山にて撮影。晴れやかな夏空の下、ひっそりと。",
+        "text2":"2018.08.31",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"6",
+        "type":"photo",
+        "title" :"Intellect",
+        "subtitle":"Photography",
+        "text":"世界を変えた書物展にて撮影。 #世界を変えた書物展",
+        "text2":"2018.09.10",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"7",
+        "type":"photo",
+        "title" :"Rainbow",
+        "subtitle":"Photography",
+        "text":"入道雲を撮影したら、後から気づいた。現像を施して雰囲気のある一枚に。",
+        "text2":"2019.05.05",
+        "text3":"Canon EOS_70D/EF70-300mm f/4-5.6 IS II STM"
+    },
+    {
+        "id":"8",
+        "type":"photo",
+        "title" :"Fresh",
+        "subtitle":"Photography",
+        "text":"岐阜県内にて撮影。早朝の散歩時に、朝露に濡れた植物を捉えた一枚。",
+        "text2":"2019.08.20",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"9",
+        "type":"photo",
+        "title" :"Sunset",
+        "subtitle":"Photography",
+        "text":"千葉県にて撮影。台風の爪痕が残る中、綺麗な夕日が差し込んでいた。",
+        "text2":"2019.10.13",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"10",
+        "type":"photo",
+        "title" :"Illume",
+        "subtitle":"Photography",
+        "text":"ダイヤモンド富士に挑戦中に撮影したもの。ダイアモンド富士は撮れなかったものの、良い一枚が撮れた。",
+        "text2":"2019.05.11",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"11",
+        "type":"photo",
+        "title" :"Umi-shibaura",
+        "subtitle":"Photography",
+        "text":"海芝浦駅にて撮影。ホームが夕日に差し込む時期であった。",
+        "text2":"2019.11.30",
+        "text3":"Canon EOS_70D/Sigma 8-16mm F4.5-5.6 DC HSM"
+    },
+    {
+        "id":"12",
+        "type":"photo",
+        "title" :"Izu-oshima",
+        "subtitle":"Photography",
+        "text":"対岸の伊豆大島がくっきりと見える。夕日がバックライトのように照らしていた。",
+        "text2":"2019.10.13",
+        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
+    },
+    {
+        "id":"13",
+        "type":"photo",
+        "title" :"Sakura",
+        "subtitle":"Photography",
+        "text":"春の新宿御苑にて。桜の額縁が、野鳥を彩る。",
+        "text2":"2019.04.07",
+        "text3":"Canon EOS_70D/EF70-300mm f/4-5.6 IS II STM"
+    },
+    {
+        "id":"14",
+        "type":"photo",
+        "title" :"Hanabira",
+        "subtitle":"Photography",
+        "text":"同じく、春の新宿御苑にて。花びらがひらり。",
+        "text2":"2019.04.07",
+        "text3":"Canon EOS_70D/EF70-300mm f/4-5.6 IS II STM"
     }
 ]
