@@ -67,7 +67,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     if(window.innerWidth >= 750){
-      store.dispatch('crearlyHeader')
+      store.dispatch('clearlyHeader')
     } else {
       store.dispatch('smartphoneHeader')
     }

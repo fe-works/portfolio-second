@@ -8,14 +8,16 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     //img_srcを乱数にする
-    img_src: require('@/assets/pic_background/img_1.png'),
+    img_src: 'img_1.png',
     topArticle: require('@/assets/json/top-article.json'),
     subArticle: require('@/assets/json/sub-article.json'),
     spArticle: require('@/assets/json/sp-article.json'),
     descriptionArticle: require('@/assets/json/description.json'),
 
     scrollHeader:'clear',
-    headerMenuCheck:'none'
+    headerMenuCheck:'none',
+    checkLoading: false
+
   },
 
   //stateを参照する関数はここへ
@@ -54,6 +56,10 @@ export default new Vuex.Store({
       }
     },
 
+    checkLoading(state) {
+      return state.checkLoading
+    }
+
   },
 
   //stateを更新するものはこちらへ
@@ -72,24 +78,17 @@ export default new Vuex.Store({
       let pic = 3
       let num = Math.floor(Math.random()* pic)+1
       state.img_src = 'img_' + num + '.png'
-    }
-
-    /*setImage(state, payload){
-      state.img_src = payload
     },
 
-    setTopArticle(state, payload) {
-      state.topArticle = payload
-    }*/
+    updateLoading(state, payload) {
+      state.checkLoading = payload
+    }
 
   },
   actions: {
   setImage(context) {
     context.commit('setImage')
   },
-    /*getTopArticle(context) {
-      context.commit(topArticleJson)
-    }*/
 
   smartphoneHeader(context) {
     context.commit('updateHeader','smart')
@@ -109,6 +108,14 @@ export default new Vuex.Store({
 
   openHeader(context) {
     context.commit('updateHeaderMenu','open')
+  },
+
+  setLoading(context) {
+    context.commit('updateLoading',true)
+  },
+
+  outLoading(context) {
+    context.commit('updateLoading',false)
   }
 }
 

@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+
+    <Loading v-if="checkLoading"></Loading>
+    <div v-else id="main">
     <!-- Header -->
     <transition>
       <!--- clear,default,smart --->
@@ -9,12 +12,14 @@
     </transition>
     <router-view/>
   </div>
+  </div>
 </template>
 
 <script>
 import ScalHeader from '@/components/ScalHeader.vue'
 import Header from '@/components/Header.vue'
 import SpHeader from '@/components/SpHeader.vue'
+import Loading from '@/components/Loading.vue'
 
 import { mapGetters } from 'vuex'
 import store from '@/store'
@@ -23,13 +28,14 @@ export default {
   components: {
     ScalHeader,
     Header,
-    SpHeader
+    SpHeader,
+    Loading
   },
 
   //img_srcを生成させるようにする
 
   computed: {
-   ...mapGetters(['scrollHeader']),
+   ...mapGetters(['scrollHeader','checkLoading']),
   },
   
   methods: {

@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '@/store'
+
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-export default new VueRouter({
+const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -39,12 +41,6 @@ export default new VueRouter({
       props:true
     },
     {
-      // 一時的なもの
-      path:'/loading',
-      name:'loading',
-      component: () => import('../components/Loading.vue'),
-    },
-    {
       path: '*',
       redirect: '/'
     }
@@ -55,3 +51,15 @@ export default new VueRouter({
   }
 
 })
+
+router.beforeEach((to, from, next) => {
+  store.dispatch('setLoading')
+  next()
+})
+
+router.afterEach(() => {
+  store.dispatch('outLoading')
+  console.log('finish')
+})
+
+export default router
