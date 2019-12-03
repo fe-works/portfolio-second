@@ -3,7 +3,7 @@
     <div id="welcome">
 
       <!-- ここを自動生成できるようにする -->
-        <div class="bg-top" v-bind:style="{'background-image':'url(' + img_src + ')'}" ></div>
+        <div class="bg-top" v-bind:style="{'background-image':'url(' + require('@/assets/pic_background/' + img_src ) + ')'}" ></div>
         
         <!-- scrollアイコン -->
         <img class="scroll-icon" src="@/assets/scroll.svg">
@@ -71,6 +71,9 @@ export default {
     } else {
       store.dispatch('smartphoneHeader')
     }
+
+    // 動くかな〜
+    store.dispatch('setImage')
   },
 
   beforeDestroy() {

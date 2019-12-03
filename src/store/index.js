@@ -66,13 +66,13 @@ export default new Vuex.Store({
 
     updateHeaderMenu (state, payload) {
       state.headerMenuCheck = payload
-    }
+    },
 
-    /*setImage(state) {
-      let pic = 4
-      let num = Math.floor(Math.random()* pic)
-      state.img_src = "\'img_' + num + '.png\'
-    }*/
+    setImage(state) {
+      let pic = 3
+      let num = Math.floor(Math.random()* pic)+1
+      state.img_src = 'img_' + num + '.png'
+    }
 
     /*setImage(state, payload){
       state.img_src = payload
@@ -84,6 +84,9 @@ export default new Vuex.Store({
 
   },
   actions: {
+  setImage(context) {
+    context.commit('setImage')
+  },
     /*getTopArticle(context) {
       context.commit(topArticleJson)
     }*/

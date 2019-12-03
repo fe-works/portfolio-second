@@ -39,6 +39,12 @@ export default new VueRouter({
       props:true
     },
     {
+      // 一時的なもの
+      path:'/loading',
+      name:'loading',
+      component: () => import('../components/Loading.vue'),
+    },
+    {
       path: '*',
       redirect: '/'
     }

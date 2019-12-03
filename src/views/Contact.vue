@@ -80,16 +80,27 @@ export default {
   grid-template-rows: 40px 150px 1000px;
 
   /* 列 */
-  grid-template-columns: 30px 10px 360px;
+  grid-template-columns: 30px 10px auto;
 
   margin-left:auto;
   margin-right:auto;
   }
 
+  #form #intro{
+  margin-right:40px;
+  }
+
   #form #googleform{
   grid-row:3;
-  grid-column:3;
-  margin-left:-20px;
-}
+  grid-column:2/3;
+  width: 90vw;
+  margin:0 auto;
+  }
+
+  #googleform iframe{
+    margin-left:-10px;
+    width: 90vw;
+    height: 1200px;
+  }
 }
 </style>

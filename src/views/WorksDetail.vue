@@ -101,6 +101,7 @@ export default {
   align-items: flex-start;
   margin-left:40px;
   
+  margin-bottom:50px;
   /* 検討課題
   align-self: flex-start;
   position: sticky;*/

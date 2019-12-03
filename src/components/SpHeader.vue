@@ -67,6 +67,7 @@ export default {
     }
   },
 
+  /* こいつが怪しい */
   beforeDestroy() {
     store.dispatch('closeHeader')
   }
@@ -83,25 +84,27 @@ export default {
   justify-content: space-between;
   position: fixed;
 
-  height: 40px;
+  height: 71px;
   width:100vw;
 
   z-index: 300;
-}
+  }
 
-#menu-icon {
+#menu_icon {
   position: absolute;
   right: 0;
   top: 0;
-  width: 40px;
-  height: 40px;
+
   cursor: pointer;
+
   z-index: 350;
+  
+  height: 100%;
+  width: 71px;
 }
 
 .menu_line {
   display: block;
-  content: '';
 
   position: relative;
 
@@ -111,10 +114,11 @@ export default {
   background-color:#1A1A1A;
 
   transition: all .6s;
-
   border-radius:6px;
 
   right:20px;
+  margin-left:36px;
+
   
 }
 
@@ -127,6 +131,8 @@ export default {
 
   background-color:#1A1A1A;
   opacity:0.4;
+
+  cursor: pointer;
   width:100vw;
   height:100vh;
 
