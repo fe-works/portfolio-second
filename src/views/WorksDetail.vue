@@ -24,7 +24,7 @@
         </div>
 
         <div id="info-title_2">
-        <h2 v-if="description.type === 'photo'">Camera/lens</h2>
+        <h2 v-if="description.type === 'photo'">Camera / Lens</h2>
         <h2 v-else>Concept</h2>
         <h3>{{ description.text3 }}</h3>
         </div>
@@ -186,6 +186,8 @@ export default {
     align-items:center;
   }
 
+  #fix{
+    height:70px;
+  }
 }
-
 </style>

@@ -54,12 +54,15 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   store.dispatch('setLoading')
+
+  if(store.state.headerMenuCheck === 'open')
+  store.dispatch('closeHeader')
+
   next()
 })
 
 router.afterEach(() => {
   store.dispatch('outLoading')
-  console.log('finish')
 })
 
 export default router

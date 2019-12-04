@@ -106,4 +106,5 @@ export default {
 .v-leave, .v-enter-to {
   opacity:1.0;
 }
+
 </style>

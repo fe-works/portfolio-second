@@ -27,17 +27,35 @@
       <h1 id="skills-title">Skills</h1>
 
       <section id="table-name">
-        <p>programming</p>
-        <p>Tools</p>
-        <p>Other</p>
+        <p class="box_title box_title-1">programming</p>
+        <p class="box_title box_title-2">Tools</p>
+        <p class="box_title box_title-3">Other</p>
       </section>
 
-      <!-- Jsonベースに変えよう -->
       <section id="table-contents">
-        <p>CSS, HTML, JavaScript, C, Vue.js</p>
-        <p>AdobeXD, Illustrator, Lightroom, AfterEffects, Aviutl, VScoode, Keynote, Rekordbox</p>
-        <p>Photo, Design, Planning, Movie_Edit, DJ</p>
+        <p class="box_items box_items-1">C, CSS, HTML, JavaScript, Vue.js</p>
+        <p class="box_items box_items-2">AdobeXD, Illustrator, Lightroom, AfterEffects, Aviutl, VScode, Keynote, Rekordbox</p>
+        <p class="box_items box_items-3">Photo, Design, Planning, Movie_Edit, DJ</p>
       </section>
+
+      <!-- 
+        <div id="table">
+        <table>
+          <tr>
+            <th class="skills-category">Programming</th>
+            <td class="skills-detail">C, CSS, HTML, JavaScript, Vue.js</td>
+          </tr>
+          <tr>
+            <th class="skills-category">Tools</th>
+            <td class="skills-detail">AdobeXD, Illustrator, Lightroom, AfterEffects, Aviutl, VScode, Keynote, Rekordbox</td>
+          </tr>
+          <tr>
+            <th class="skills-category">Other</th>
+            <td class="skills-detail">Photo, Design, Planning, Movie_Edit, DJ</td>
+          </tr>
+        </table>
+        </div>
+        -->
 
     </div>
   </div>
@@ -132,10 +150,26 @@
 }
 
 #table-name {
+  text-align:end;
   grid-row:4;
   grid-column:2;
-  text-align: end;
 }
+
+/*
+#table-name .box_title-1 {
+  grid-row:4;
+  grid-column:2;
+}
+
+#table-name .box_title-2 {
+  grid-row:5;
+  grid-column:2;
+}
+
+#table-name .box_title-3 {
+  grid-row:6;
+  grid-column:2;
+}*/
 
 #table-contents {
   grid-row:4;
@@ -195,6 +229,12 @@
   #table-name {
     grid-column:1/3;
     margin-right:6px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #fix{
+    height:70px;
   }
 }
 </style>

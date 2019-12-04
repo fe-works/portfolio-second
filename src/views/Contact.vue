@@ -102,5 +102,9 @@ export default {
     width: 90vw;
     height: 1200px;
   }
+
+  #fix{
+    height:70px;
+  }
 }
 </style>

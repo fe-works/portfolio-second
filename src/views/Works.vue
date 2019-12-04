@@ -91,6 +91,10 @@ flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-around;
   }
+
+  #fix{
+    height:70px;
+  }
 }
 
 </style>

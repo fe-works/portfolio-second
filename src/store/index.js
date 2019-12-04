@@ -16,7 +16,7 @@ export default new Vuex.Store({
 
     scrollHeader:'clear',
     headerMenuCheck:'none',
-    checkLoading: false
+    checkLoading: true
 
   },
 
