@@ -26,17 +26,13 @@
       <img id="head-icons" src="@/assets/Line-2.svg">
       <h1 id="skills-title">Skills</h1>
 
-      <section id="table-name">
-        <p class="box_title box_title-1">programming</p>
-        <p class="box_title box_title-2">Tools</p>
-        <p class="box_title box_title-3">Other</p>
-      </section>
+      <p class="box_title box_title-1">Programming</p>
+      <p class="box_title box_title-2">Tools</p>
+      <p class="box_title box_title-3">Other</p>
 
-      <section id="table-contents">
-        <p class="box_items box_items-1">C, CSS, HTML, JavaScript, Vue.js</p>
-        <p class="box_items box_items-2">AdobeXD, Illustrator, Lightroom, AfterEffects, Aviutl, VScode, Keynote, Rekordbox</p>
-        <p class="box_items box_items-3">Photo, Design, Planning, Movie_Edit, DJ</p>
-      </section>
+      <p class="box_items box_items-1">C, CSS, HTML, JavaScript, Vue.js</p>
+      <p class="box_items box_items-2">AdobeXD, Illustrator, Lightroom, AfterEffects, Aviutl, VScode, Keynote, Rekordbox</p>
+      <p class="box_items box_items-3">Photo, Design, Planning, Movie_Edit, DJ</p>
 
       <!-- 
         <div id="table">
@@ -76,7 +72,7 @@
 #profile {
   margin:50px 0;
   display:grid;
-  grid-template-rows:100px auto 40px 200px;
+  grid-template-rows:100px auto 40px auto auto auto;
   grid-template-columns:50px 150px 20px auto;
   margin-right:20px;
 }
@@ -149,32 +145,42 @@
   margin-top:3px;
 }
 
-#table-name {
+.box_title {
   text-align:end;
+}
+
+.box_title.box_title-1 {
   grid-row:4;
   grid-column:2;
 }
 
-/*
-#table-name .box_title-1 {
-  grid-row:4;
-  grid-column:2;
-}
-
-#table-name .box_title-2 {
+.box_title.box_title-2 {
   grid-row:5;
   grid-column:2;
 }
 
-#table-name .box_title-3 {
+.box_title.box_title-3 {
   grid-row:6;
   grid-column:2;
-}*/
+}
 
-#table-contents {
+.box_items {
+  color: #BF2427;
+}
+
+.box_items.box_items-1 {
   grid-row:4;
   grid-column:4;
-  color: #BF2427;
+}
+
+.box_items.box_items-2 {
+  grid-row:5;
+  grid-column:4;
+}
+
+.box_items.box_items-3 {
+  grid-row:6;
+  grid-column:4;
 }
 
 
@@ -183,7 +189,7 @@
   #profile {
     margin:50px 0;
     display:grid;
-    grid-template-rows:150px auto 40px 200px;
+    grid-template-rows:150px auto 40px auto auto auto;
     grid-template-columns:30px 100px 10px auto;
     margin-right:20px;
   }

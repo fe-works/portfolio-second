@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-/* おそらくグリッド？ */
 #fix{
   content:none;
   width:100vw;
@@ -73,10 +72,6 @@ export default {
 }
 
 #grid{
-  /*display:grid;
-  grid-template-columns:auto,70vw,30vw,auto;
-  grid-template-rows:auto;*/
-
   display:flex;
   justify-content:center;
   margin: 0 auto;
@@ -84,17 +79,14 @@ export default {
 }
 
 #picture{
-  /* grid-column: 2;
-  grid-row: 1; */
   width:70vw;
   max-width:1000px;
   margin:0;
+
   align-items: flex-end;
 }
 
 #text{
-  /* grid-column: 4;
-  grid-row:1; */
   margin-right:20px;
   max-width:430px;
   top:0;
@@ -102,9 +94,12 @@ export default {
   margin-left:40px;
   
   margin-bottom:50px;
-  /* 検討課題
+
+  margin-top:-60px;
+  padding-top:70px;
+  
   align-self: flex-start;
-  position: sticky;*/
+  position: sticky;
 }
 
 #picture img{
@@ -165,9 +160,13 @@ export default {
     width:100%;
     height: auto;
     margin: 0 auto;
+
     flex-direction:column;
     justify-content:center;
+  }
 
+  #text {
+    display:block;
   }
 
   #picture img{
@@ -175,19 +174,19 @@ export default {
     height:auto;
     margin:0;
     margin-bottom:10px;
-    align-items:center;
 
+    
   }
 
   #picture {
     margin:0 auto;
-    width:auto;
     height:auto;
-    align-items:center;
+    width:auto;
+    padding-top: 70px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  #fix{
-    height:70px;
-  }
 }
 </style>

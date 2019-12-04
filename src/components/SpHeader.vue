@@ -187,7 +187,7 @@ export default {
 }
 
 
-/* ----------------------------------- menu-icon */
+/* menu-icon */
 #menu-icon {
   position: absolute;
   right: 0;
@@ -248,7 +248,7 @@ export default {
   top: 34px;
 }
 
-/* ----------------------------------- menu-icon */
+/* menu-icon */
 
 /* contents */
 
