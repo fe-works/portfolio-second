@@ -2,7 +2,7 @@
     <div id="SubArticle" v-on:click="onclick">
 
         <!-- 画像要素指定できるように/詳細記事を表示する -->
-        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/' + subarticle.img) + ')'}">
+        <div class="capture" v-lazy:background-image="require('@/assets/' + subarticle.img)">
         </div>
         <div class="text">
         <h2>{{ subarticle.title }}</h2>
@@ -68,7 +68,6 @@ export default {
     font-size:8pt;
     font-weight: normal;
 }
-
 
 @media screen and (max-width:750px) {
     .capture {

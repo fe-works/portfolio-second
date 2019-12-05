@@ -1,8 +1,8 @@
 <template>
   <div id="app">
 
-    <Loading v-if="checkLoading"></Loading>
-    <div v-else id="main">
+    <!-- <Loading v-if="checkLoading"></Loading> -->
+    <div id="main">
     <!-- Header -->
     <transition>
       <!--- clear,default,smart --->
@@ -19,7 +19,7 @@
 import ScalHeader from '@/components/ScalHeader.vue'
 import WhiteHeader from '@/components/WhiteHeader.vue'
 import SpHeader from '@/components/SpHeader.vue'
-import Loading from '@/components/Loading.vue'
+// import Loading from '@/components/Loading.vue'
 
 import { mapGetters } from 'vuex'
 import store from '@/store'
@@ -29,7 +29,7 @@ export default {
     ScalHeader,
     WhiteHeader,
     SpHeader,
-    Loading
+    // Loading
   },
 
   //img_srcを生成させるようにする

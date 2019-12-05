@@ -1,7 +1,7 @@
 <template>
     <div id="TopArticle" v-on:click="onclick">
         <!-- 画像要素指定できるように -->
-        <div class="capture" v-bind:style="{'background-image': 'url('+ require('@/assets/top_article/' + article.img) + ')'}">
+        <div class="capture" v-lazy:background-image="require('@/assets/top_article/' + article.img)">
         </div>
         <div class="text">
         <h2>{{ article.title }}</h2>

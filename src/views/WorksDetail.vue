@@ -6,7 +6,7 @@
       <div id="grid">
       <section id="picture">
         <img class="capture capture-1" v-bind:src="require('@/assets/detail_article/img_' + description.id + '-1.jpg')" />
-        <img v-if="description.type !== 'photo'" class="capture capture-2" v-bind:src="require('@/assets/detail_article/img_' + description.id + '-2.jpg')"/>
+        <img v-if="description.type !== 'photo'" class="capture capture-2" v-bind:src="require('@/assets/detail_article/img_' + description.id + '-2.png')"/>
       </section>
 
       <section id="text">

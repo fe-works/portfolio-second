@@ -29,12 +29,12 @@
     },
     {
         "id":"4",
-        "type":"photo",
+        "type":"other",
         "title" :"Code for Kosen",
         "subtitle":"Logo Design / Project Planning",
         "text":"学内でのプロジェクト向けに作成。CodeのCとKosenのKを掛け合わせて、Kをシンボルマークとして作成。 Kの接合部を目立たせ、プログラミングで多用される' { (かもめかっこ) 'を表現。",
-        "text2":"(none)",
-        "text3":"(none)"
+        "text2":"Fe-chan(myself)",
+        "text3":"let`s civic hacking!"
     },
     {
         "id":"5",
