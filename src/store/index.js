@@ -77,7 +77,7 @@ export default new Vuex.Store({
     setImage(state) {
       let pic = 3
       let num = Math.floor(Math.random()* pic)+1
-      state.img_src = 'img_' + num + '.png'
+      state.img_src = 'img_' + num + '.jpg'
     },
 
     updateLoading(state, payload) {
