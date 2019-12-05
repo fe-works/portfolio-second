@@ -1,6 +1,6 @@
 <template>
     <!-- Header -->
-    <div id="header">
+    <div id="white-header">
     <div id="global-nav">
 
       <!-- link -->
@@ -29,7 +29,7 @@
 <script>
 
 export default {
-  name:'header'
+  name:'white-header'
 }
 </script>
 

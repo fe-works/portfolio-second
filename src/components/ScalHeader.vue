@@ -1,6 +1,6 @@
 <template>
     <!-- Header -->
-    <div id="header">
+    <div id="clear-header">
     <div id="global-nav">
     
      <div id="nav">

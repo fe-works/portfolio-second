@@ -69,32 +69,26 @@ export default {
     font-weight: normal;
 }
 
+
 @media screen and (max-width:750px) {
-    #TopArticle{
-        background-color: #FFFFFF;
-        width:450px;
-        height:200px;
-        margin:0;
-        margin-top:50px;
-        padding:0;
+    .capture {
+        width:90%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:360px){
+    #SubArticle{
+        width:300px;
+        margin:15px auto;
     }
 
-    #TopArticle .capture{
-        width:450px;
-        height:160px;
-        margin:0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:contain;
-    }
-
-    @media screen and (max-width:750px) {
-        .capture {
-            width:90%;
-            height: auto;
-            margin: 0 auto;
-            justify-content: space-around;
-        }
+    #SubArticle .capture{
+        width:300px;
+        height:162px;
+        margin:0 auto;
     }
 }
 </style>

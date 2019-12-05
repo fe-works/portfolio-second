@@ -1,7 +1,7 @@
 <template>
 
    <!-- Header -->
-  <div id="header">
+  <div id="sp-header">
 
     <transition name="fadein">
       <span v-on:click="onclick" v-if="headerMenuCheck === 'open'" id="background"></span>
@@ -248,10 +248,7 @@ export default {
   top: 34px;
 }
 
-/* menu-icon */
-
 /* contents */
-
 #wrap {
   position: fixed;
 
@@ -269,7 +266,7 @@ export default {
 }
 
 #nav a{
-  margin:10px 10px;
+  margin:8px 0px;
   text-decoration: none;
   font-weight: normal;
   font-size:25px;
@@ -281,7 +278,7 @@ export default {
 }
 
 #logo-sns {
-  padding:0px 30px;
+  padding:0px 10px;
 }
 
 #logo-sns img {

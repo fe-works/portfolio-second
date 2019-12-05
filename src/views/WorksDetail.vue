@@ -51,7 +51,7 @@ export default {
 
     computed:mapGetters(['getDescription']),
 
-    mounted() {
+    created() {
       let d = this.getDescription(this.id)
 
       //なかったら

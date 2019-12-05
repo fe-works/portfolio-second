@@ -6,7 +6,7 @@
         "title" :"Fe.photos",
         "subtitle":"Logo, Web, CI Design / Coding",
         "text":"自らのポートフォリオサイト、並びにロゴなどを始めとする「身の回り」をデザイン。ロゴは太陽をモチーフとし、全体的にシンプルな構成とした。",
-        "text2":"fe-chan(myself)",
+        "text2":"Fe-chan(myself)",
         "text3":"More simpleness, More Beautiful."
     },
     {
@@ -15,7 +15,7 @@
         "title" :"LAC(Event)",
         "subtitle":"Logo Design / PV / Planning",
         "text":"学内で実施したカンファレンスイベントの企画、運営を担当。ロゴデザインから運営まで、一貫して携わる。",
-        "text2":"fe-chan(myself)",
+        "text2":"Fe-chan(myself)",
         "text3":"Let’s grow, Drop seeds."
     },
     {
@@ -31,8 +31,8 @@
         "id":"4",
         "type":"photo",
         "title" :"Code for Kosen",
-        "subtitle":"Logo Design / Project planning",
-        "text":"学内でのプロジェクト向けに作成。CodeのCとKosenのKを掛け合わせて、Kをシンボルマークとして作成。 Kの接合部を目立たせ、プログラミングで多用される'{'を表現。",
+        "subtitle":"Logo Design / Project Planning",
+        "text":"学内でのプロジェクト向けに作成。CodeのCとKosenのKを掛け合わせて、Kをシンボルマークとして作成。 Kの接合部を目立たせ、プログラミングで多用される' { (かもめかっこ) 'を表現。",
         "text2":"(none)",
         "text3":"(none)"
     },

@@ -7,7 +7,7 @@
     <transition>
       <!--- clear,default,smart --->
     <ScalHeader v-if="scrollHeader === 'clear'"></ScalHeader>
-    <Header v-else-if="scrollHeader === 'default'"></Header>
+    <WhiteHeader v-else-if="scrollHeader === 'default'"></WhiteHeader>
     <SpHeader v-else></SpHeader>
     </transition>
     <router-view/>
@@ -17,7 +17,7 @@
 
 <script>
 import ScalHeader from '@/components/ScalHeader.vue'
-import Header from '@/components/Header.vue'
+import WhiteHeader from '@/components/WhiteHeader.vue'
 import SpHeader from '@/components/SpHeader.vue'
 import Loading from '@/components/Loading.vue'
 
@@ -27,7 +27,7 @@ import store from '@/store'
 export default {
   components: {
     ScalHeader,
-    Header,
+    WhiteHeader,
     SpHeader,
     Loading
   },
