@@ -1,2 +1,3 @@
 https://fe-photos.netlify.com/* https://fe.photos/:splat 301!
-ttps://fe.photos/* https://fe.photos:splat 301!
+http://fe-photos.netlify.com/* https://fe.photos/:splat 301!
+http://fe.photos/* https://fe.photos/:splat 301!

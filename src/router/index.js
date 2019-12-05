@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import store from '@/store'
+import store from '@/store'
 
 import Home from '../views/Home.vue'
 
@@ -52,14 +52,14 @@ const router = new VueRouter({
 
 })
 
-// router.beforeEach((to, from, next) => {
+router.beforeEach((to, from, next) => {
 //   store.dispatch('setLoading')
 
-//   if(store.state.headerMenuCheck === 'open')
-//   store.dispatch('closeHeader')
+  if(store.state.headerMenuCheck === 'open')
+  store.dispatch('closeHeader')
 
-//   next()
-// })
+  next()
+})
 
 // router.afterEach(() => {
 //   store.dispatch('outLoading')

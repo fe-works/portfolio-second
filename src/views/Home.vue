@@ -64,7 +64,7 @@ export default {
     }
   },
 
-  mounted() {
+  created(){
     window.addEventListener('scroll', this.handleScroll)
     if(window.innerWidth >= 750){
       store.dispatch('clearlyHeader')
