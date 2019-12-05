@@ -1,5 +1,5 @@
 <template>
-    <div id="TopArticle" v-on:click="onclick">
+    <div id="top-article" v-on:click="onclick">
         <!-- 画像要素指定できるように -->
         <div class="capture" v-lazy:background-image="require('@/assets/top_article/' + article.img)">
         </div>
@@ -31,14 +31,14 @@ export default {
 </script>
 
 <style scoped>
-#TopArticle{
+#top-article{
     background-color: #FFFFFF;
     width:750px;
     margin:0;
     margin-top:25px;
     padding:0;
 }
-#TopArticle .capture{
+#top-article .capture{
     width:750px;
     height:270px;
     margin:0;
@@ -55,13 +55,13 @@ export default {
     margin: 10px 0;
 }
 
-#TopArticle .text h2{
+#top-article .text h2{
     margin:0;
     font-size:24pt;
     font-weight: normal;
 }
 
-#TopArticle .text h3{
+#top-article .text h3{
     margin:0;
     font-size:12pt;
     font-weight: normal;

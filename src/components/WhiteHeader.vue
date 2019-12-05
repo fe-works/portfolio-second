@@ -13,14 +13,12 @@
 
       <!-- Logos for fe.photos -->
       <div id="logo-header">
-          <div key="black_logo">
             <img src="@/assets//header_logo/logo_black.svg" alt="logo">
-          </div>
       </div>
 
       <div id="logo-sns">
-        <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg"></a>
-        <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg"></a>
+        <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
+        <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg" alt="twitter-logo"></a>
       </div>
     </div>
     </div>

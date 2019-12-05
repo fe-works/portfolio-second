@@ -25,8 +25,8 @@
         </div>
 
         <div id="logo-sns">
-          <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg"></a>
-          <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg"></a>
+          <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
+          <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg" alt="instagram-logo"></a>
         </div>
       </div>
     </transition>
@@ -34,7 +34,7 @@
     <div id="menu-bar">
 
       <div id="sp_logo">
-        <img src="@/assets//header_logo/logo_black.svg" v-on:click="$router.push('/').catch(err => {})">
+        <img src="@/assets//header_logo/logo_black.svg" v-on:click="$router.push('/').catch(err => {})" alt="logo">
       </div>
       
       <!-- ここだけ！！ -->

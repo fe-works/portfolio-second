@@ -3,7 +3,7 @@
     <div id="fix"></div>
       
       <div id="form">
-        <img id="head-icon" src="@/assets/Line-1.svg">
+        <img id="head-icon" src="@/assets/Line-1.svg" alt="">
         <h1 id="title">contact</h1>
         <p id="intro">お問い合わせは、下記フォームよりお願いします。<br/>
           (お急ぎの場合は、TwitterのDMをご利用下さい。必ず返信のお約束をするものではありません。)

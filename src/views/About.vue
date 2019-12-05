@@ -3,16 +3,16 @@
     <div id="fix"></div>
     <div id="profile">
 
-      <img id="my-icon" src="@/assets/Logo.svg">
-      <img id="head-icon" src="@/assets/Line-1.svg">
+      <img id="my-icon" src="@/assets/Logo.svg" alt="my-icon">
+      <img id="head-icon" src="@/assets/Line-1.svg" alt="">
       
       <div id="name">
         <h1>Fe-chan</h1>
         <h2>Student, Photograph, Design, etc.</h2>
       <!-- SNS-acsess -->
         <div id="logo-sns">
-          <a class="twitter" href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg"></a>
-          <a class="insta" href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg"></a>
+          <a class="twitter" href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
+          <a class="insta" href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg" alt="instagram-logo"></a>
         </div>
       </div>
 
@@ -23,7 +23,7 @@
       そのほかにも、趣味としてデザインや動画制作、DJなど多岐にわたり取り組んでいる。</p>
     
       <!-- ここもJsonベースにしたい -->
-      <img id="head-icons" src="@/assets/Line-2.svg">
+      <img id="head-icons" src="@/assets/Line-2.svg" alt="">
       <h1 id="skills-title">Skills</h1>
 
       <p class="box_title box_title-1">Programming</p>

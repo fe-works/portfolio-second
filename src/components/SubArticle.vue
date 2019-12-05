@@ -1,5 +1,5 @@
 <template>
-    <div id="SubArticle" v-on:click="onclick">
+    <div id="sub-article" v-on:click="onclick">
 
         <!-- 画像要素指定できるように/詳細記事を表示する -->
         <div class="capture" v-lazy:background-image="require('@/assets/' + subarticle.img)">
@@ -32,14 +32,14 @@ export default {
 </script>
 
 <style scoped>
-#SubArticle{
+#sub-article{
     background-color: #FFFFFF;
     width:350px;
     margin:20px 0;
     padding:0;
 }
 
-#SubArticle .capture{
+#sub-article .capture{
     width:350px;
     height:200px;
     margin:0;
@@ -57,13 +57,13 @@ export default {
     margin: 5px 0;
 }
 
-#SubArticle .text h2{
+#sub-article .text h2{
     margin:0;
     font-size:16pt;
     font-weight: normal;
 }
 
-#SubArticle .text h3{
+#sub-article .text h3{
     margin:0;
     font-size:8pt;
     font-weight: normal;
@@ -76,15 +76,19 @@ export default {
         margin: 0 auto;
         justify-content: space-around;
     }
+
+    #sub-article .text h3 {
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width:360px){
-    #SubArticle{
+    #sub-article{
         width:300px;
         margin:15px auto;
     }
 
-    #SubArticle .capture{
+    #sub-article .capture{
         width:300px;
         height:162px;
         margin:0 auto;
