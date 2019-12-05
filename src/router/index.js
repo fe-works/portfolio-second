@@ -52,14 +52,13 @@ const router = new VueRouter({
 
 })
 
-// router.beforeEach((to, from, next) => {
-//   store.dispatch('setLoading')
+ router.beforeEach((to, from, next) => {
 
-//   if(store.state.headerMenuCheck === 'open')
-//   store.dispatch('closeHeader')
+   if(store.state.headerMenuCheck === 'open')
+   store.dispatch('closeHeader')
 
-//   next()
-// })
+   next()
+})
 
 // router.afterEach(() => {
 //   store.dispatch('outLoading')

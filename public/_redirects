@@ -1,2 +1,2 @@
 https://fe-photos.netlify.com/* https://fe.photos/:splat 301!
-/* / 301!
+/* /index.html 200
