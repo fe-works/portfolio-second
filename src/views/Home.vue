@@ -6,7 +6,7 @@
         <div class="bg-top" v-bind:style="{'background-image':'url(' + require('@/assets/pic_background/' + img_src ) + ')'}" ></div>
         
         <!-- scrollアイコン -->
-        <img class="scroll-icon" src="@/assets/scroll.svg">
+        <img class="scroll-icon" src="@/assets/scroll.svg" alt="scroll">
 
     </div>
 
