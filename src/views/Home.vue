@@ -93,7 +93,7 @@ export default {
 #welcome .bg-top {
   /* background-image:img_src */
   height: 100vh;
-  width:100vw;
+  width:100%;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;

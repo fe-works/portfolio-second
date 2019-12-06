@@ -37,6 +37,7 @@ export default {
     margin:0;
     margin-top:25px;
     padding:0;
+    cursor: pointer;
 }
 #top-article .capture{
     width:750px;

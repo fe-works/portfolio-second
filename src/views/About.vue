@@ -11,8 +11,8 @@
         <h2>Student, Photograph, Design, etc.</h2>
       <!-- SNS-acsess -->
         <div id="logo-sns">
-          <a class="twitter" href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
-          <a class="insta" href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg" alt="instagram-logo"></a>
+          <a class="twitter" href="https://twitter.com/_fechan/" target="_blank" rel=”noopener”><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
+          <a class="insta" href="https://instagram.com/_fechan/" target="_blank" rel=”noopener”><img src="@/assets/logo_sns/logo_insta.svg" alt="instagram-logo"></a>
         </div>
       </div>
 
@@ -67,6 +67,7 @@
 
 #about {
   font-family: 'century-gothic',a-otf-ud-shin-go-pr6n, sans-serif;
+  min-height:99.5vh;
 }
 
 #profile {

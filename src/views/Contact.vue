@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div id="contact">
     <div id="fix"></div>
       
       <div id="form">
@@ -30,8 +30,12 @@ export default {
 
 }
 </script>
-
 <style scoped>
+#contact {
+  min-height:99.5vh;
+  overflow: hidden;
+}
+
 #fix {
   width:100vw;
   height:60px;
@@ -44,7 +48,7 @@ export default {
   
   display:grid;
   /* 行 */
-  grid-template-rows: 40px 80px 800px;
+  grid-template-rows: 40px 80px auto;
 
   /* 列 */
   grid-template-columns: 50px 10px auto;
@@ -77,7 +81,7 @@ export default {
 @media screen and (max-width:800px) {
   #form {
     /* 行 */
-  grid-template-rows: 40px 150px 1000px;
+  grid-template-rows: 40px 150px 1100px;
 
   /* 列 */
   grid-template-columns: 30px 10px auto;

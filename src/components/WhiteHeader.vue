@@ -17,8 +17,8 @@
       </div>
 
       <div id="logo-sns">
-        <a href="https://twitter.com/_fechan/"><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
-        <a href="https://instagram.com/_fechan/"><img src="@/assets/logo_sns/logo_insta.svg" alt="twitter-logo"></a>
+        <a href="https://twitter.com/_fechan/" target="_blank" rel=”noopener”><img src="@/assets/logo_sns/logo_tw.svg" alt="twitter-logo"></a>
+        <a href="https://instagram.com/_fechan/" target="_blank" rel=”noopener”><img src="@/assets/logo_sns/logo_insta.svg" alt="twitter-logo"></a>
       </div>
     </div>
     </div>

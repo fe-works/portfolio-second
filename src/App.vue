@@ -11,7 +11,8 @@
     <SpHeader v-else></SpHeader>
     </transition>
     <router-view/>
-  </div>
+    <BottomFooter></BottomFooter>
+    </div>
   </div>
 </template>
 
@@ -19,6 +20,7 @@
 import ScalHeader from '@/components/ScalHeader.vue'
 import WhiteHeader from '@/components/WhiteHeader.vue'
 import SpHeader from '@/components/SpHeader.vue'
+import BottomFooter from '@/components/BottomFooter.vue'
 // import Loading from '@/components/Loading.vue'
 
 import { mapGetters } from 'vuex'
@@ -29,6 +31,7 @@ export default {
     ScalHeader,
     WhiteHeader,
     SpHeader,
+    BottomFooter,
     // Loading
   },
 

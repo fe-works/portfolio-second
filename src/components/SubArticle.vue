@@ -37,6 +37,7 @@ export default {
     width:350px;
     margin:20px 0;
     padding:0;
+    cursor: pointer;
 }
 
 #sub-article .capture{

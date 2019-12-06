@@ -65,6 +65,9 @@ export default {
 </script>
 
 <style scoped>
+#article {
+  min-height:99.5vh;
+}
 #fix{
   content:none;
   width:100vw;
