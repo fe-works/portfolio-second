@@ -47,6 +47,11 @@ export default {
     background-position: center;
     background-size:contain;
 }
+
+#top-article .capture[lazy=loading] {
+    background-size: 100px 100px;
+}
+
 .text{
     width: 100%;
     display: flex;

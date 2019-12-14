@@ -49,6 +49,10 @@ export default {
     background-size:contain;
 }
 
+#sub-article .capture[lazy=loading] {
+    background-size: 100px 100px;
+}
+
 .text{
     width: 100%;
     display: flex;

@@ -68,6 +68,7 @@ export default {
 #article {
   min-height:99.5vh;
 }
+
 #fix{
   content:none;
   width:100vw;
@@ -113,6 +114,11 @@ export default {
     margin-bottom:20px;
     margin-left:10px;
 }
+
+#picture img[lazy=loading] {
+    max-width:100px;
+    max-height:100px;
+  }
 
 #grid p,h1,h2,h3{
     margin:0;
