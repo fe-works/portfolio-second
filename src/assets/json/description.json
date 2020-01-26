@@ -21,6 +21,15 @@
     {
         "id":"3",
         "type":"other",
+        "title" :"Ideacon'20",
+        "subtitle":"Planning / Graphic Design",
+        "text":"学内で実施するコンテストに企画から携わる。聞き取りを元に、ターゲットが興味を持つ様に募集要件を大きく配置したレイアウトにした。そのほか、ロゴはじめグラフィック全般を担当。",
+        "text2":"Fe-chan(myself)",
+        "text3":"Be Creative."
+    },
+    {
+        "id":"4",
+        "type":"other",
         "title" :"PR Poster",
         "subtitle":"Graphic Design",
         "text":"依頼を受けて作成。背景を文字にし、予測される質問を羅列させることにより、ターゲットに関心を持たせるよう工夫を施した。",
@@ -28,7 +37,7 @@
         "text3":"疑問を、発見にしよう。"
     },
     {
-        "id":"4",
+        "id":"5",
         "type":"other",
         "title" :"Code for Kosen",
         "subtitle":"Logo Design / Project Planning",
@@ -37,22 +46,13 @@
         "text3":"let`s civic hacking!"
     },
     {
-        "id":"5",
+        "id":"6",
         "type":"ohter",
         "title" :"XD challenge",
         "subtitle":"UI Design",
         "text":"UIデザインの勉強の一環として、AdobeXD Creative challengeに参加した際に作成。プロダクトのUIデザインをテーマに、実践的なUIデザインを行った。一部作品はイベント主催側に取り上げられる。",
         "text2":"Fe-chan(myself)",
         "text3":"(none)"
-    },
-    {
-        "id":"6",
-        "type":"photo",
-        "title" :"Signal",
-        "subtitle":"Photography",
-        "text":"近年信号機の更新とともに増えているLEDタイプ。今も昼夜問わず稼働は続いている。",
-        "text2":"2019.06.29",
-        "text3":"Canon EOS_70D/EF-S18-135mm f/3.5-5.6 IS STM"
     },
     {
         "id":"7",

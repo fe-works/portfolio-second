@@ -1,25 +1,25 @@
 [
     {
-        "title" :"PR Poster",
-        "subtitle":"Graphic Design",
+        "title" :"Ideacon'20",
+        "subtitle":"Planning / Graphic Design",
         "img":"sub_article/img_art-s1.jpg",
         "id":"3"
     },
     {
-        "title" :"Code for Kosen",
-        "subtitle":"Logo Design / Project Planning",
+        "title" :"PR Poster",
+        "subtitle":"Graphic Design",
         "img":"sub_article/img_art-s2.jpg",
         "id":"4"
     },
     {
-        "title" :"XD_challenge",
-        "subtitle":"UI Design",
+        "title" :"Code for Kosen",
+        "subtitle":"Logo Design / Project Planning",
         "img":"sub_article/img_art-s3.jpg",
         "id":"5"
     },
     {
-        "title" :"Signal",
-        "subtitle":"Photography",
+        "title" :"XD_challenge",
+        "subtitle":"UI Design",
         "img":"sub_article/img_art-s4.jpg",
         "id":"6"
     },
